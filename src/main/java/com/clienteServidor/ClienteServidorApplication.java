@@ -8,6 +8,4 @@ public class ClienteServidorApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(ClienteServidorApplication.class, args);
-	}
-
-}
+	}}
