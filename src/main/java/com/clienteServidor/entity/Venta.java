@@ -26,4 +26,6 @@ public class Venta {
     private LocalTime hora_venta;
     @Column(name = "precio_total", nullable = false, precision = 10, scale = 2)
     private BigDecimal total;
+    @Column(name="estado_pago", nullable = false)
+    private String estado;
 }
