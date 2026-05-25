@@ -18,7 +18,7 @@ public abstract class Usuario {
     private String apellidoP;
     @Column(nullable = false, name="apellido_materno")
     private String apellidoM;
-    @Column(nullable = false, name="correo", unique = true)
+    @Column(name="correo", unique = true)
     private String correo;
     @Column(name="telefono", length = 9)
     private String telefono;
