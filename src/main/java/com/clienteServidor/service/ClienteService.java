@@ -21,9 +21,9 @@ public class ClienteService {
         this.feignClient = feignClient;
     }
 
-    public ClienteDNIResponseDTO consultarApi(String dni){
+    public ClienteDNIResponseDTO consultarApi(String numero){
         String auth = "Bearer "+token;
-        ClienteDNIResponseDTO dto= feignClient.consultarDni(dni, auth);
+        ClienteDNIResponseDTO dto= feignClient.consultarDni(numero, auth);
         return dto;
     }
 

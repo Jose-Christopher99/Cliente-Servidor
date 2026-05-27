@@ -14,8 +14,6 @@ public class Producto {
     private Long idProducto;
     @Column(name="nombre", nullable = false)
     private String nombre;
-    @Column(name="descripcion")
-    private String descripcion;
     @Column(name="precio",precision = 10, scale = 2, nullable = false)
     private BigDecimal precio;
     @Column(name="stock", nullable = false)

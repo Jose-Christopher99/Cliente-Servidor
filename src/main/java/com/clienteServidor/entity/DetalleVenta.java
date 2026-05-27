@@ -13,7 +13,7 @@ public class DetalleVenta {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long idVenta;
     @ManyToOne
-    @JoinColumn(name = "venta_id",nullable = false)
+    @JoinColumn(name = "orden_id",nullable = false)
     private Venta venta;
     @ManyToOne
     @JoinColumn(name="producto_id", nullable = false)

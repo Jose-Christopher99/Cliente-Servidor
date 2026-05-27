@@ -14,6 +14,7 @@ public class ClienteController {
     public ClienteController(ClienteService clienteService) {
         this.clienteService = clienteService;
     }
+
     @GetMapping("/buscar")
     public ResponseEntity<ClienteDNIResponseDTO> buscarCliente(@RequestParam("dni") String dni){
         ClienteDNIResponseDTO response = clienteService.consultarApi(dni);
